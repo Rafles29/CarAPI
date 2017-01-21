@@ -28,6 +28,7 @@ def car_to_json(car):
     return {"ID": car[0], "MANUFACTOR": car[1], "MODEL": car[2], "YEAR": car[3], "FUEL": car[4], "AC": car[5],
                     "SHORT_PRICE": car[6], "MEDIUM_PRICE": car[7], "LONG_PRICE": car[8]}
 
+
 def get_cars():
     db = sqlite3.connect(Database)
     cursor = db.execute("SELECT * FROM CARS")
@@ -36,11 +37,28 @@ def get_cars():
         cars.append(car_to_json(car))
     return jsonify(cars)
 
+
+def upload_car(manu, model, year, fuel, transmission, ac, short_price, medium_price, long_price, quantity):
+    db = sqlite3.connect(Database)
+    db.execute("INSERT INTO CARS (MANUFACTOR, MODEl, YEAR, FUEL, TRANSMISSION, AC, SHORT_PRICE, MEDIUM_PRICE, LONG_PRICE, QUANTITY) \
+VALUES('{}','{}',{},'{}','{}','{}',{},{},{},{})".format(manu, model, year, fuel, transmission, ac, short_price, medium_price, long_price, quantity))
+    db.commit()
+    db.close()
+
+
 def acc_match(login, password):
     db = sqlite3.connect(Database)
     cursor = db.execute("SELECT * FROM USERS WHERE LOGIN = '{}'".format(login))
     for row in cursor:
         if row[2] == password:
+            return True
+    db.close()
+    return False
+
+def token_match(token):
+    db = sqlite3.connect(Database)
+    cursor = db.execute("SELECT * FROM USERS WHERE TOKEN = '{}'".format(token))
+    for row in cursor:
             return True
     db.close()
     return False
@@ -60,7 +78,7 @@ def login():
         if acc_match(login, password):
             return jsonify({"token": get_token(login)})
         else:
-            return 'BAD'
+            return 'BAD!'
 
 
 
@@ -68,8 +86,15 @@ def login():
 def cars():
     if request.method == 'GET':
         return get_cars()
-    elif request.method == 'Post':
-        return 'PostCars!'
+    elif request.method == 'POST':
+        req = request.json
+        token = req['token']
+        print(req)
+        if(token_match(token)):
+            upload_car(req['manufactor'], req['model'], req['year'], req['fuel'], req['transmission'], req['ac'], req['short_price'], req['medium_price'], req['long_price'], req['quantity'])
+            return jsonify({"message": "OK"})
+        else:
+            return 'nope'
 
 
 @app.route('/cars/<string:id>', methods=['GET', 'PUT'])
@@ -95,14 +120,8 @@ def show_reservation(id):
     elif request.method == 'DELETE':
         return 'DeleteReservation! {}'.format(id)
 def main():
-    print('This is the databases.py file')
-
-    db = sqlite3.connect(Database)
-    cursor = db.execute("SELECT * FROM USERS WHERE LOGIN = 'admin'")
-    for row in cursor:
-        if row[2] == 'admin1':
-            print(row)
-    db.close()
+    print('This is main')
 
 if __name__ == '__main__':
+    main()
     app.run()
