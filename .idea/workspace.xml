@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19b7063e-0449-41d4-bdac-3223264bfe47" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/1bd8a087-46e2-42ad-ad13-8382ab6f9b5d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/1bd8a087-46e2-42ad-ad13-8382ab6f9b5d.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CarData.db" afterPath="$PROJECT_DIR$/CarData.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CarAPI$main.coverage" NAME="main Coverage Results" MODIFIED="1485198749672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CarAPI$main.coverage" NAME="main Coverage Results" MODIFIED="1485206119531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/webAPI$main.coverage" NAME="main Coverage Results" MODIFIED="1485025232626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -27,6 +28,44 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="CarData.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="CarData.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="CLIENTS" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="CarData.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="CARS" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -34,26 +73,37 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="120" column="41" lean-forward="false" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
+            <state relative-caret-position="611">
+              <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1485198749651" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
-                <marker date="1485198749651" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
-                <marker date="1485198749651" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
-                <marker date="1485198749651" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
-                <marker date="1485198749651" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
-                <marker date="1485198749651" expanded="true" signature="810:855" ph="UPDATE CARS " />
-                <marker date="1485198749651" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
-                <marker date="1485198749651" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
-                <marker date="1485198749651" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
-                <marker date="1485198749651" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
-                <marker date="1485198749651" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
-                <marker date="1485198749651" expanded="true" signature="2013:2041" ph="DELETE FROM " />
-                <marker date="1485198749651" expanded="true" signature="2013:2043" ph="DELETE FROM " />
-                <marker date="1485198749651" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
-                <marker date="1485198749651" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+                <marker date="1485206119521" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
+                <marker date="1485206119521" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
+                <marker date="1485206119521" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
+                <marker date="1485206119521" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
+                <marker date="1485206119521" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
+                <marker date="1485206119521" expanded="true" signature="810:855" ph="UPDATE CARS " />
+                <marker date="1485206119521" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
+                <marker date="1485206119521" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
+                <marker date="1485206119521" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
+                <marker date="1485206119521" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
+                <marker date="1485206119521" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
+                <marker date="1485206119521" expanded="true" signature="2013:2041" ph="DELETE FROM " />
+                <marker date="1485206119521" expanded="true" signature="2013:2043" ph="DELETE FROM " />
+                <marker date="1485206119521" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
+                <marker date="1485206119521" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+                <marker date="1485206119521" expanded="true" signature="4773:4842" ph="CREATE TABLE... CLIENTS" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1bd8a087-46e2-42ad-ad13-8382ab6f9b5d/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +126,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0d2639da-120f-4959-9eb6-fc21d3cf6d81/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6f451a69-c7db-49a5-8d35-cb68f0eaec9f/console.sql" />
         <option value="$PROJECT_DIR$/CarData.db" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1bd8a087-46e2-42ad-ad13-8382ab6f9b5d/console.sql" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1bd8a087-46e2-42ad-ad13-8382ab6f9b5d/console.sql" />
       </list>
     </option>
   </component>
@@ -108,10 +158,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 3.6.0 (C:\Users\rwozn\AppData\Local\Programs\Python\Python36-32\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="CarAPI" />
@@ -124,6 +186,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,29 +453,38 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12460937" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3338438" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5015625" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33359313" sideWeight="0.4984375" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12568952" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299923" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -452,21 +525,22 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1485198749651" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
-            <marker date="1485198749651" expanded="true" signature="810:855" ph="UPDATE CARS " />
-            <marker date="1485198749651" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="2013:2041" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2013:2043" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
+            <marker date="1485206119521" expanded="true" signature="810:855" ph="UPDATE CARS " />
+            <marker date="1485206119521" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="2013:2041" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2013:2043" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="4773:4842" ph="CREATE TABLE... CLIENTS" />
           </folding>
         </state>
       </provider>
@@ -477,21 +551,22 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1485198749651" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
-            <marker date="1485198749651" expanded="true" signature="810:855" ph="UPDATE CARS " />
-            <marker date="1485198749651" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="2013:2041" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2013:2043" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
+            <marker date="1485206119521" expanded="true" signature="810:855" ph="UPDATE CARS " />
+            <marker date="1485206119521" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="2013:2041" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2013:2043" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="4773:4842" ph="CREATE TABLE... CLIENTS" />
           </folding>
         </state>
       </provider>
@@ -502,21 +577,48 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1485198749651" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
-            <marker date="1485198749651" expanded="true" signature="810:855" ph="UPDATE CARS " />
-            <marker date="1485198749651" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="2013:2041" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2013:2043" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
+            <marker date="1485206119521" expanded="true" signature="810:855" ph="UPDATE CARS " />
+            <marker date="1485206119521" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="2013:2041" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2013:2043" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="4773:4842" ph="CREATE TABLE... CLIENTS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1485206119521" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
+            <marker date="1485206119521" expanded="true" signature="810:855" ph="UPDATE CARS " />
+            <marker date="1485206119521" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="2013:2041" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2013:2043" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="4773:4842" ph="CREATE TABLE... CLIENTS" />
           </folding>
         </state>
       </provider>
@@ -541,21 +643,22 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1485198749651" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
-            <marker date="1485198749651" expanded="true" signature="810:855" ph="UPDATE CARS " />
-            <marker date="1485198749651" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="2013:2041" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2013:2043" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
+            <marker date="1485206119521" expanded="true" signature="810:855" ph="UPDATE CARS " />
+            <marker date="1485206119521" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="2013:2041" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2013:2043" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="4773:4842" ph="CREATE TABLE... CLIENTS" />
           </folding>
         </state>
       </provider>
@@ -606,42 +709,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1bd8a087-46e2-42ad-ad13-8382ab6f9b5d/console.sql">
+    <entry file="file://$PROJECT_DIR$/CarData.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="27" column="1023" lean-forward="false" selection-start-line="27" selection-start-column="1023" selection-end-line="27" selection-end-column="1023" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarData.db">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1bd8a087-46e2-42ad-ad13-8382ab6f9b5d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="992" lean-forward="false" selection-start-line="29" selection-start-column="992" selection-end-line="29" selection-end-column="992" />
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="41" lean-forward="false" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
+        <state relative-caret-position="611">
+          <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1485198749651" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
-            <marker date="1485198749651" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
-            <marker date="1485198749651" expanded="true" signature="810:855" ph="UPDATE CARS " />
-            <marker date="1485198749651" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
-            <marker date="1485198749651" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
-            <marker date="1485198749651" expanded="true" signature="2013:2041" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2013:2043" ph="DELETE FROM " />
-            <marker date="1485198749651" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
-            <marker date="1485198749651" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="214:256" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:458" ph="SELECT TOKEN... USERS" />
+            <marker date="1485206119521" expanded="true" signature="444:462" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="444:478" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="673:714" ph="SELECT QUANT... CARS" />
+            <marker date="1485206119521" expanded="true" signature="810:855" ph="UPDATE CARS " />
+            <marker date="1485206119521" expanded="true" signature="817:855" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1274:1292" ph="SELECT * FRO... CARS" />
+            <marker date="1485206119521" expanded="true" signature="1584:1699" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1709" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="1584:1749" ph="INSERT INTO CARS... " />
+            <marker date="1485206119521" expanded="true" signature="2013:2041" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2013:2043" ph="DELETE FROM " />
+            <marker date="1485206119521" expanded="true" signature="2196:2234" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="2446:2484" ph="SELECT * FRO... USERS" />
+            <marker date="1485206119521" expanded="true" signature="4773:4842" ph="CREATE TABLE... CLIENTS" />
           </folding>
         </state>
       </provider>

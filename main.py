@@ -144,7 +144,9 @@ def show_reservation(id):
 
 def main():
     print('This is main')
+    db = sqlite3.connect('CarData.db')
+    db.close()
 
 if __name__ == '__main__':
-    main()
+    #main()
     app.run()
