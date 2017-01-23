@@ -54,6 +54,14 @@ VALUES('{}','{}',{},'{}','{}','{}',{},{},{},{})".format(manu, model, year, fuel,
     db.close()
     return get_car(cursor.lastrowid)
 
+def delete_car(id):
+    db = sqlite3.connect(Database)
+    car = get_car(id)
+    db.execute("DELETE FROM CARS WHERE ID = {}".format(id))
+    db.commit()
+    db.close()
+    return car
+
 def acc_match(login, password):
     db = sqlite3.connect(Database)
     cursor = db.execute("SELECT * FROM USERS WHERE LOGIN = '{}'".format(login))
@@ -99,7 +107,7 @@ def cars():
         else:
             return make_response(jsonify({"error": "Invalid token"}), 401)
 
-@app.route('/cars/<string:id>', methods=['GET', 'PUT'])
+@app.route('/cars/<string:id>', methods=['GET', 'PUT', 'DELETE'])
 def car(id):
     if request.method == 'GET':
         return get_car(id)
@@ -111,6 +119,14 @@ def car(id):
             return change_quantity(id, req['nmb'])
         else:
             return make_response(jsonify({"error": "Invalid token"}), 401)
+    elif request.method == 'DELETE':
+        req = request.json
+        token = req['token']
+        if (token_match(token)):
+            return delete_car(id)
+        else:
+            return make_response(jsonify({"error": "Invalid token"}), 401)
+
 
 @app.route('/reservations', methods=['GET', "POST"])
 def reservations():
