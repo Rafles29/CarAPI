@@ -69,7 +69,7 @@ def get_reservations():
     cursor = db.execute("SELECT * FROM RESERVATIONS")
     reservations = []
     for reservation in cursor:
-        cars.append(car_to_json(reservation))
+        reservations.append(reservation_to_json(reservation))
     return jsonify(reservations)
 
 
@@ -153,7 +153,7 @@ def cars():
         return get_cars()
     elif request.method == 'POST':
         req = request.json
-        token = req['token']
+        token = request.headers['token']
         if(token_match(token)):
             return upload_car(req['manufactor'], req['model'], req['year'], req['fuel'], req['transmission'], req['ac'], req['short_price'], req['medium_price'], req['long_price'], req['quantity'])
         else:
@@ -165,15 +165,14 @@ def car(id):
         return get_car(id)
     elif request.method == 'PUT':
         req = request.json
-        token = req['token']
+        token = request.headers['token']
         if (token_match(token)):
             print(req['nmb'])
             return change_quantity(id, req['nmb'])
         else:
             return make_response(jsonify({"error": "Invalid token"}), 401)
     elif request.method == 'DELETE':
-        req = request.json
-        token = req['token']
+        token = request.headers['token']
         if (token_match(token)):
             return delete_car(id)
         else:
@@ -183,10 +182,14 @@ def car(id):
 @app.route('/reservations', methods=['GET', "POST"])
 def reservations():
     if request.method == 'GET':
-        return 'GetReservations!'
+        token = request.headers['token']
+        if(token_match(token)):
+            return get_reservations()
+        else:
+            return make_response(jsonify({"error": "Invalid token"}), 401)
     elif request.method == 'POST':
         req = request.json
-        token = req['token']
+        token = request.headers['token']
         if(token_match(token)):
             return make_reservation(req['date'], req['car_id'], req['client_id'])
         else:
@@ -196,10 +199,13 @@ def reservations():
 @app.route('/reservations/<id>', methods=['GET', 'DELETE'])
 def show_reservation(id):
     if request.method == 'GET':
-        return 'GetReservation! {}'.format(id)
+        token = request.headers['token']
+        if(token_match(token)):
+            return get_reservation(id)
+        else:
+            return make_response(jsonify({"error": "Invalid token"}), 401)
     elif request.method == 'DELETE':
-        req = request.json
-        token = req['token']
+        token = request.headers['token']
         if (token_match(token)):
             return delete_reservation(id)
         else:
