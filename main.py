@@ -250,20 +250,14 @@ def reservations():
         else:
             return make_response(jsonify({"error": "token not found"}), 401)
     elif request.method == 'POST':
-        if 'token' in request.headers:
-            req = request.json
-            token = request.headers['token']
-            if(token_match(token)):
-                params = ('date', 'car_id', 'client_id')
-                for param in params:
-                    if param not in req:
-                        return make_response(jsonify({"error": "bad {}".format(param)}), 401)
-                return make_reservation(req[params[0]], req[params[1]], req[params[2]])
+        req = request.json
+        params = ('date', 'car_id', 'client_id')
+        for param in params:
+            if param not in req:
+                return make_response(jsonify({"error": "bad {}".format(param)}), 401)
+        return make_reservation(req[params[0]], req[params[1]], req[params[2]])
 
-            else:
-                return make_response(jsonify({"error": "Invalid token"}), 401)
-        else:
-            return make_response(jsonify({"error": "token not found"}), 401)
+
 @app.route('/reservations/<id>', methods=['GET', 'DELETE'])
 def show_reservation(id):
     if request.method == 'GET':
@@ -298,21 +292,12 @@ def clients():
         else:
             return make_response(jsonify({"error": "token not found"}), 401)
     elif request.method == 'POST':
-        if 'token' in request.headers:
-            req = request.json
-            token = request.headers['token']
-            if(token_match(token)):
-                params = ('first_name', 'last_name', 'email', 'phone', 'city')
-                for param in params:
-                    if param not in req:
-                        return make_response(jsonify({"error": "bad {}".format(param)}), 401)
-                return add_client(req[params[0]], req[params[1]], req[params[2]], req[params[3]], req[params[4]])
-
-            else:
-                return make_response(jsonify({"error": "Invalid token"}), 401)
-        else:
-            return make_response(jsonify({"error": "token not found"}), 401)
-
+        req = request.json
+        params = ('first_name', 'last_name', 'email', 'phone', 'city')
+        for param in params:
+            if param not in req:
+                return make_response(jsonify({"error": "bad {}".format(param)}), 401)
+        return add_client(req[params[0]], req[params[1]], req[params[2]], req[params[3]], req[params[4]])
 
 @app.route('/clients/<id>', methods=['GET'])
 def client(id):
